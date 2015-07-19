@@ -228,23 +228,23 @@ Function getTableName( $begin, $end )
 		0x1200 { return "Ethiopic.png" } 		
 		0x13A0 { return "Cherokee.png" } 	
 		0x1400 { return "UnifiedCanadianAboriginalSyllabics.png" }		
-		0x1680	{ return "Ogham.png" }			
+		0x1680 { return "Ogham.png" }			
 		0x16A0 { return "Runic.png" }				
-		0x1700	{ return "Tagalog.png" }				
+		0x1700 { return "Tagalog.png" }				
 		0x1720 { return "Hanunoo.png" }					
-		0x1740	{ return "Buhid.png" }				
+		0x1740 { return "Buhid.png" }				
 		0x1760 { return "Tagbanwa.png" } 					
 		0x1780 { return "Khmer.png" }					
 		0x1800 { return "Mongolian.png" }				
 		0x1900 { return "Limbu.png" }					
 		0x1950 { return "TaiLe.png" }				
-		0x19E0	{ return "KhmerSymbols.png" }				
-		0x1D00	{ return "PhoneticExtensions.png" }						
+		0x19E0 { return "KhmerSymbols.png" }				
+		0x1D00 { return "PhoneticExtensions.png" }						
 		0x1E00 { return "LatinExtendedAdditional.png" }							
 		0x1F00 { return "GreekExtended.png" }							
-		0x2000	{ return "GeneralPunctuation.png" }					
-		0x2070	{ return "SuperscriptsandSubscripts.png" }					
-		0x20A0	{ return "CurrencySymbols.png" }						
+		0x2000 { return "GeneralPunctuation.png" }					
+		0x2070 { return "SuperscriptsandSubscripts.png" }					
+		0x20A0 { return "CurrencySymbols.png" }						
 		0x20D0 { return "CombiningDiacriticalMarksforSymbols.png" }					
 		0x2100 { return "LetterlikeSymbols.png" } 					
 		0x2150 { return "NumberForms.png" }					
@@ -252,8 +252,8 @@ Function getTableName( $begin, $end )
 		0x2200 { return "MathematicalOperators.png" }					
 		0x2300 { return "MiscellaneousTechnical.png" }					
 		0x2400 { return "ControlPictures.png" }					
-		0x2440	{ return "OpticalCharacterRecognition.png" }				
-		0x2460	{ return "EnclosedAlphanumerics.png" }				
+		0x2440 { return "OpticalCharacterRecognition.png" }				
+		0x2460 { return "EnclosedAlphanumerics.png" }				
 		0x2500 { return "BoxDrawing.png" }					
 		0x2580 { return "BlockElements.png" } 					
 		0x25A0 { return "GeometricShapes.png" }					
@@ -265,7 +265,7 @@ Function getTableName( $begin, $end )
 		0x2900 { return "SupplementalArrows-B.png" }  					
 		0x2980 { return "MiscellaneousMathematicalSymbols-B.png" } 					
 		0x2A00 { return "SupplementalMathematicalOperators.png" }  					
-		0x2B00	{ return "MiscellaneousSymbolsandArrows.png" }				
+		0x2B00 { return "MiscellaneousSymbolsandArrows.png" }				
 		0x2E80 { return "CJKRadicalsSupplement.png" }			
 		0x2F00 { return "KangxiRadicals.png" }  			
 		0x2FF0 { return "IdeographicDescriptionCharacters.png" }			
@@ -290,14 +290,14 @@ Function getTableName( $begin, $end )
 		0xDC00 { return "LowSurrogates.png" }						
 		0xE000 { return "PrivateUseArea.png" }						
 		0xF900 { return "CJKCompatibilityIdeographs.png" }			
-		0xFB00	{ return "AlphabeticPresentationForms.png" }					
-		0xFB50	{ return "ArabicPresentationForms-A.png" }					
+		0xFB00 { return "AlphabeticPresentationForms.png" }					
+		0xFB50 { return "ArabicPresentationForms-A.png" }					
 		0xFE00 { return "VariationSelectors.png" }						
 		0xFE20 { return "CombiningHalfMarks.png" }							
 		0xFE30 { return "CJKCompatibilityForms.png" }			
 		0xFE50 { return "SmallFormVariants.png" }			
-		0xFE70	{ return "ArabicPresentationForms-B.png" }			
-		0xFF00	{ return "HalfwidthandFullwidthForms.png" }					
+		0xFE70 { return "ArabicPresentationForms-B.png" }			
+		0xFF00 { return "HalfwidthandFullwidthForms.png" }					
 		0xFFF0 { return "Specials.png" }						
 		0x10000 { return "LinearBSyllabary.png" }					
 		0x10080 { return "LinearBIdeograms.png" }					
