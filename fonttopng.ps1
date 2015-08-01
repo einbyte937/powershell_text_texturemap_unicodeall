@@ -16,6 +16,16 @@ $sImageMagickConv = "$sImageMagickHome\convert.exe"
 
 $sMyPath = "mychar.txt"
 
+$pointsize = 10
+
+$rectwidth = 15
+
+$rectheight = 20
+
+$density = 90
+
+$color = [string] "hsb(0,0,0)"
+
 New-Item -ItemType Directory -Force -Path $sOutputDir
 
 New-Item -ItemType Directory -Force -Path $sCharsDir
@@ -94,6 +104,8 @@ Function conjoinRange( $begin, $end )
 	
     $sTableName = getTableName $begin $end
 	
+	$sTableName = [string]$pointsize + "pt_" + $sTableName
+	
     If( $rows -gt 1 )
     {
 	    Do
@@ -145,12 +157,12 @@ Function outputPNG( $begin, $end, $font )
 			$sCurFileName = [string]"{0:X0000}" -f $i+".png"
 			
 			$sImageMagickArgs = @('-background', 'transparent', 
-						'-fill', 'hsb(0,0,0)', 
+						'-fill', $color, 
 						'-font', "$font",
-						'-density','90',
-						'-pointsize', '10',
+						'-density',$density,
+						'-pointsize', $pointsize,
 						'-gravity', 'center',
-                        '-size', '15x20'
+                        '-size', "$rectwidth x $rectheight"
 						#'-annotate','0',
 						'label:@mychar.txt',
 						"$sCharsDir\$sCurFileName")
@@ -173,12 +185,12 @@ Function outputPNG( $begin, $end, $font )
 	$sCurFileName = "space.png"
 	
 	$sImageMagickArgs = @('-background', 'transparent', 
-				'-fill', 'hsb(0,0,0)', 
+				'-fill', $color, 
 				'-font', "$font",
-				'-density','90',
-				'-pointsize', '10',
+				'-density',$density,
+				'-pointsize', $pointsize,
 				'-gravity', 'center',
-				'-size', '15x20'
+				'-size', "$rectwidth x $rectheight"
 				#'-annotate','0',
 				'label:@mychar.txt',
 				"$sCharsDir\$sCurFileName")
