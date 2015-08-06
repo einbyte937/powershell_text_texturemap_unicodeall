@@ -16,15 +16,17 @@ $sImageMagickConv = "$sImageMagickHome\convert.exe"
 
 $sMyPath = "mychar.txt"
 
-$pointsize = 10
+$pointsize = 20
 
-$rectwidth = 15
+$rectwidth = 30
 
-$rectheight = 20
+$rectheight = 50
 
 $density = 90
 
 $color = [string] "hsb(0,0,0)"
+
+$background = [string] "white"
 
 New-Item -ItemType Directory -Force -Path $sOutputDir
 
@@ -156,7 +158,7 @@ Function outputPNG( $begin, $end, $font )
 
 			$sCurFileName = [string]"{0:X0000}" -f $i+".png"
 			
-			$sImageMagickArgs = @('-background', 'transparent', 
+			$sImageMagickArgs = @('-background', $background, 
 						'-fill', $color, 
 						'-font', "$font",
 						'-density',$density,
@@ -184,7 +186,7 @@ Function outputPNG( $begin, $end, $font )
 
 	$sCurFileName = "space.png"
 	
-	$sImageMagickArgs = @('-background', 'transparent', 
+	$sImageMagickArgs = @('-background', $background, 
 				'-fill', $color, 
 				'-font', "$font",
 				'-density',$density,
